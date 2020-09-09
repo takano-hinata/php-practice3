@@ -1,8 +1,9 @@
-<?php 
+<?php
 
 
 //課題１
-function sum1($max) {
+function sum1($max)
+{
     $result = $max * 2;
     echo $result . "\n";
 }
@@ -11,17 +12,19 @@ sum1(4);
 
 
 //課題２
-function sum2($a, $b) {
+function sum2($a, $b)
+{
     echo $a * $b . "\n";
 }
 
-sum2(2,2);
+sum2(2, 2);
 
 
 //課題３
-function times_array($arr) {
+function times_array($arr)
+{
     $result = 1;
-    foreach($arr as $a) {
+    foreach ($arr as $a) {
         $result *= $a;
     }
     return $result . "\n";
@@ -31,14 +34,15 @@ echo times_array(array(1, 3, 5 ,7, 9));
 
 
 //課題４
-function max_array($arr) {
- $max_number = $arr[0];
- foreach($arr as $a){
-     if ($max_number < $a) {
-         $max_number = $a;
+function max_array($arr)
+{
+    $max_number = $arr[0];
+    foreach ($arr as $a) {
+        if ($max_number < $a) {
+            $max_number = $a;
         }
     }
- return $max_number . "\n";
+    return $max_number . "\n";
 }
  
 echo max_array(array(1, 3, 5 ,7, 9));
@@ -48,18 +52,18 @@ echo max_array(array(1, 3, 5 ,7, 9));
 //・strip_tags
 $text = "<h1>サーモン</h1><p>イクラ</p><strong>ウニ</strong>";
 echo $text . "\n";
-echo strip_tags($text,'<p>') . "\n";
+echo strip_tags($text, '<p>') . "\n";
 
 //・array_push
 $members = array("マグロ","イカ","アジ");
-array_push($members,"ブリ","サンマ");
+array_push($members, "ブリ", "サンマ");
 print_r($members);
 
 //・array_merge
 $array1 = [1, 2, 3];
 $array2 = [4, 5, 6];
 $array3 = [7, 8, 9];
-$array = array_merge($array1,$array2,$array3);
+$array = array_merge($array1, $array2, $array3);
 print_r($array);
 
 //・time
@@ -67,4 +71,4 @@ $time1 = time();
 echo $time1 . "\n";
 
 //・mktime, date
-echo date("Y年m月d日　H時i分" , mktime(0,0,0,1,1,2000));
+echo date("Y年m月d日　H時i分", mktime(0, 0, 0, 1, 1, 2000));
