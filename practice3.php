@@ -4,24 +4,23 @@
 //課題１
 function sum1($max)
 {
-    $result = $max * 2;
-    echo $result . "\n";
+    return  $max * 2 . "\n";
 }
 
-sum1(4);
+echo sum1(4);
 
 
 //課題２
 function sum2($a, $b)
 {
-    echo $a * $b . "\n";
+    return $a + $b . "\n";
 }
 
-sum2(2, 2);
+echo sum2(2, 5);
 
 
 //課題３
-function times_array($arr)
+function multiply_array($arr)
 {
     $result = 1;
     foreach ($arr as $a) {
@@ -30,7 +29,7 @@ function times_array($arr)
     return $result . "\n";
 }
 
-echo times_array(array(1, 3, 5 ,7, 9));
+echo multiply_array(array(1, 3, 5 ,7, 9));
 
 
 //課題４
