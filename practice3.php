@@ -4,19 +4,19 @@
 //課題１
 function sum1($max)
 {
-    return  $max * 2 . "\n";
+    return  $max * 2;
 }
 
-echo sum1(4);
+echo sum1(4) . "\n";
 
 
 //課題２
 function sum2($a, $b)
 {
-    return $a + $b . "\n";
+    return $a + $b;
 }
 
-echo sum2(2, 5);
+echo sum2(2, 5) . "\n";
 
 
 //課題３
@@ -26,10 +26,10 @@ function multiply_array($arr)
     foreach ($arr as $a) {
         $result *= $a;
     }
-    return $result . "\n";
+    return $result;
 }
 
-echo multiply_array(array(1, 3, 5 ,7, 9));
+echo multiply_array(array(1, 3, 5 ,7, 9)) . "\n";
 
 
 //課題４
@@ -41,10 +41,10 @@ function max_array($arr)
             $max_number = $a;
         }
     }
-    return $max_number . "\n";
+    return $max_number;
 }
  
-echo max_array(array(1, 3, 5 ,7, 9));
+echo max_array(array(1, 3, 5 ,7, 9)) . "\n";
 
 
 //課題５
@@ -70,4 +70,4 @@ $time1 = time();
 echo $time1 . "\n";
 
 //・mktime, date
-echo date("Y年m月d日　H時i分", mktime(0, 0, 0, 1, 1, 2000));
+echo date("Y年m月d日　H時i分", mktime(0, 0, 0, 1, 1, 2000)) . "\n";
